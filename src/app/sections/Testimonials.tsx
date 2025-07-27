@@ -10,7 +10,7 @@ const testimonials = [
     text: "I think he's a really great developer. I have no idea what exactly he does, but the results always look amazing!",
     avatar: memojiAvatar1,
   },
-  {
+  { 
     name: "Maks Koziol",
     position: "My first client",
     text: "He designed an entire website for my door salon and absolutely nailed the look and feel. Super professional and fast.",
