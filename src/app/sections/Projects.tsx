@@ -1,29 +1,30 @@
-import drzwikoziol from "@/assets/images/drzwikoziol_img.png";
-
+import drzwikoziol from "../assets/images/drzwikoziol_img.png";
+import footballplanner from "../assets/images/football_planner.png";
+import letheai from "../assets/images/letheai.jpg";
 const portfolioProjects = [
   {
     company: "Knowit",
     year: "2025",
-    title: "Defake",
+    title: "LETHE.AI",
     results: [
       { title: "Designed complete UI/UX from scratch" },
       { title: "Integrated frontend with AI-powered backend" },
       { title: "Worked in a team on a large-scale project" },
     ],  
     link: "https://www.knowit.pl",
-    image: drzwikoziol, // tymczasowo
+    image: letheai,
   },
   {
-    company: "Bachelor's Web App",
-    year: "2025",
-    title: "EatCheap",
+    company: "Study project",
+    year: "2024",
+    title: "Football Planner",
     results: [
       { title: "Fullstack app: Node.js (Express) + React (Vite)" },
-      { title: "Smart recipe suggestion algorithm based on ingredients" },
-      { title: "Helps students plan meals and save money" },
+      { title: "Match organizer webapp" },
+      { title: "Helps people to meet and play football⚽" },
     ],
-    link: "https://github.com/reavz7/EatCheap",
-    image: drzwikoziol, // tymczasowo
+    link: "https://github.com/reavz7/FootballPlanner",
+    image: footballplanner, 
   },
   {
     company: "Drzwi Koziol",  
@@ -36,9 +37,9 @@ const portfolioProjects = [
     ],
     link: "https://github.com/reavz7/DrzwiKoziol",
     image: drzwikoziol,
-  }
+  } 
 ];
 
 export const ProjectsSection = () => {
-  return <div>Projects Section</div>;
+  return <div>ProjectSection</div>
 };
