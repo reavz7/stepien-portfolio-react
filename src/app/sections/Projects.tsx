@@ -2,6 +2,18 @@ import drzwikoziol from "@/assets/images/drzwikoziol_img.png";
 
 const portfolioProjects = [
   {
+    company: "Knowit",
+    year: "2025",
+    title: "Defake",
+    results: [
+      { title: "Designed complete UI/UX from scratch" },
+      { title: "Integrated frontend with AI-powered backend" },
+      { title: "Worked in a team on a large-scale project" },
+    ],  
+    link: "https://www.knowit.pl",
+    image: drzwikoziol, // tymczasowo
+  },
+  {
     company: "Bachelor's Web App",
     year: "2025",
     title: "EatCheap",
@@ -14,7 +26,7 @@ const portfolioProjects = [
     image: drzwikoziol, // tymczasowo
   },
   {
-    company: "Drzwi Koziol",
+    company: "Drzwi Koziol",  
     year: "2024",
     title: "drzwikoziol.pl",
     results: [
@@ -24,19 +36,7 @@ const portfolioProjects = [
     ],
     link: "https://github.com/reavz7/DrzwiKoziol",
     image: drzwikoziol,
-  },
-  {
-    company: "Knowit",
-    year: "2025",
-    title: "Defake",
-    results: [
-      { title: "Designed complete UI/UX from scratch" },
-      { title: "Integrated frontend with AI-powered backend" },
-      { title: "Worked in a team on a large-scale project" },
-    ],
-    link: "https://www.knowit.pl",
-    image: drzwikoziol, // tymczasowo
-  },
+  }
 ];
 
 export const ProjectsSection = () => {
