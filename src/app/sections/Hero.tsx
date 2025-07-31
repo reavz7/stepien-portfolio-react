@@ -1,11 +1,21 @@
 import memojiSmile from "../assets/images/memoji smile.png";
 import Image from "next/image";
 import ArrowDown from "../assets/icons/arrow-down.svg";
-
+import grainImage from "../assets/images/grain.jpg";
+import Staricon from "../assets/icons/star.svg";
 export const HeroSection = () => {
   return (
-    <div className="py-32">
-      <div className="container">
+    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
+      <div
+        className="absolute inset-0 -z-30 opacity-5"
+        style={{ backgroundImage: `url(${grainImage.src})` }}
+      ></div>
+      <div className="hero-ring size-[620px]"></div>
+      <div className="hero-ring size-[820px]"></div>
+      <div className="hero-ring size-[1020px]"></div>
+      <div className="hero-ring size-[1220px]"></div>
+     
+      <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
             src={memojiSmile}
@@ -19,20 +29,25 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <h1 className="font-serif text-3xl text-center mt-8 mb-4 tracking-wide">Building Exceptional User Expierences</h1>
-        <p className="text-center text-white/60">
-          I am a frontend developer that loves what he is doing :). Let's talk!
-        </p>
-        <div className="flex flex-col items-center mt-8 gap-4">
+        <div className="max-w-lg mx-auto">
+          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 mb-4 tracking-wide">
+            Building Exceptional User Expierences
+          </h1>
+          <p className="text-center text-white/60 md:text-lg">
+            I am a frontend developer that loves what he is doing :). Let's
+            talk!
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-2xl">
-            <span className="font-semibold">Explore My Work</span>  
+            <span className="font-semibold">Explore My Work</span>
             <Image
               src={ArrowDown}
               alt="arrow down"
               className="size-4"
               style={{ filter: "brightness(0) invert(1)" }}
             />
-          </button >
+          </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-2xl">
             <span>👋</span>
             <span className="font-semibold">Let's talk</span>
