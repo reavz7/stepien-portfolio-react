@@ -49,6 +49,39 @@ export const HeroSection = () => {
           }}
         />
       </HeroOrbit>
+       <HeroOrbit size={430} rotation={-14}>
+        <Image
+          src={SparkleIcon}
+          alt="A star icon floating in the background"
+          className="size-12"
+          style={{
+            filter:
+              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
+          }}
+        />
+      </HeroOrbit>
+       <HeroOrbit size={440} rotation={114}>
+        <Image
+          src={SparkleIcon}
+          alt="A star icon floating in the background"
+          className="size-8"
+          style={{
+            filter:
+              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
+          }}
+        />
+      </HeroOrbit>
+       <HeroOrbit size={530} rotation={90}>
+        <Image
+          src={SparkleIcon}
+          alt="A star icon floating in the background"
+          className="size-10"
+          style={{
+            filter:
+              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
+          }}
+        />
+      </HeroOrbit>
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
