@@ -73,11 +73,11 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 mb-4 tracking-wide">
-            Building Exceptional User Experiences
+            Hello there! <br />I am Kamil
           </h1>
           <p className="text-center text-white/60 md:text-lg">
             I am a frontend developer that loves what he is doing :). Let's
-            talk!
+            work together!
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
