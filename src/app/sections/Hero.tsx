@@ -1,10 +1,12 @@
 import memojiSmile from "../assets/images/memoji smile.png";
 import Image from "next/image";
-import ArrowDown from "../assets/icons/arrow-down.svg";
 import grainImage from "../assets/images/grain.jpg";
-import Staricon from "../assets/icons/star.svg";
-import SparkleIcon from "../assets/icons/sparkle.svg"
 import { HeroOrbit } from "../components/HeroOrbit";
+// Import Twoich nowych komponentów
+import StarIcon  from "../components/icons/StarIcon";
+import  SparkleIcon  from "../components/icons/SparkleIcon";
+import  ArrowDownIcon  from "../components/icons/ArrowDownIcon";
+
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
@@ -16,72 +18,43 @@ export const HeroSection = () => {
       <div className="hero-ring size-[820px]"></div>  
       <div className="hero-ring size-[1020px]"></div>
       <div className="hero-ring size-[1220px]"></div>
-      <HeroOrbit size={745} rotation={-72}>
-        <Image
-          src={Staricon}
-          alt="A star icon floating in the background"
-          className="size-28"
-          style={{
-            filter:
-              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
-          }}
-        />
+      
+      <HeroOrbit size={715} rotation={-72}>
+        <StarIcon className="size-28 text-emerald-400/90" />
       </HeroOrbit>
-        <HeroOrbit size={550} rotation={20}>
-        <Image
-          src={Staricon}
-          alt="A star icon floating in the background"
-          className="size-12"
-          style={{
-            filter:
-              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
-          }}
-        />
+      
+      <HeroOrbit size={230} rotation={198}>
+        <StarIcon className="size-12 text-emerald-400/90" /> 
       </HeroOrbit>
-       <HeroOrbit size={590} rotation={98}>
-        <Image
-          src={Staricon}
-          alt="A star icon floating in the background"
-          className="size-12"
-          style={{
-            filter:
-              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
-          }}
-        />
+      
+      <HeroOrbit size={720} rotation={128}>
+        <StarIcon className="size-12 text-emerald-400/90" />
       </HeroOrbit>
-       <HeroOrbit size={430} rotation={-14}>
-        <Image
-          src={SparkleIcon}
-          alt="A star icon floating in the background"
-          className="size-12"
-          style={{
-            filter:
-              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
-          }}
-        />
+      
+      <HeroOrbit size={430} rotation={-14}>
+        <SparkleIcon className="size-12 text-gray-500/50" />
       </HeroOrbit>
-       <HeroOrbit size={440} rotation={114}>
-        <Image
-          src={SparkleIcon}
-          alt="A star icon floating in the background"
-          className="size-8"
-          style={{
-            filter:
-              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
-          }}
-        />
+      
+      <HeroOrbit size={490} rotation={76}>
+        <SparkleIcon className="size-8 text-gray-500/50" />
       </HeroOrbit>
-       <HeroOrbit size={530} rotation={90}>
-        <Image
-          src={SparkleIcon}
-          alt="A star icon floating in the background"
-          className="size-10"
-          style={{
-            filter:
-              "brightness(0) opacity(50%) saturate(50%) invert(15%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(23%)",
-          }}
-        />
+      
+      <HeroOrbit size={654} rotation={178}>
+        <SparkleIcon className="size-10 text-gray-500/50" />
       </HeroOrbit>
+
+      <HeroOrbit size={710} rotation={14}>
+        <SparkleIcon className="size-10 text-gray-500/50" />
+      </HeroOrbit>
+      <HeroOrbit size={720} rotation={92}>
+        <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+      </HeroOrbit>  
+  <HeroOrbit size={520} rotation={-41}>
+        <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+      </HeroOrbit>  
+        <HeroOrbit size={670} rotation={240}>
+        <div className="size-3 bg-emerald-300/20 rounded-full"></div>
+      </HeroOrbit>  
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
@@ -98,7 +71,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 mb-4 tracking-wide">
-            Building Exceptional User Expierences
+            Building Exceptional User Experiences
           </h1>
           <p className="text-center text-white/60 md:text-lg">
             I am a frontend developer that loves what he is doing :). Let's
@@ -108,12 +81,7 @@ export const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-2xl">
             <span className="font-semibold">Explore My Work</span>
-            <Image
-              src={ArrowDown}
-              alt="arrow down"
-              className="size-4"
-              style={{ filter: "brightness(0) invert(1)" }}
-            />
+            <ArrowDownIcon className="size-4 text-white" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-2xl">
             <span>👋</span>
