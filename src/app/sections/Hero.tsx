@@ -7,9 +7,10 @@ import StarIcon  from "../components/icons/StarIcon";
 import  SparkleIcon  from "../components/icons/SparkleIcon";
 import  ArrowDownIcon  from "../components/icons/ArrowDownIcon";
 
-export const HeroSection = () => {
+export const HeroSection = () => {  
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_20%,transparent)]">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{ backgroundImage: `url(${grainImage.src})` }}
@@ -54,7 +55,8 @@ export const HeroSection = () => {
       </HeroOrbit>  
         <HeroOrbit size={670} rotation={240}>
         <div className="size-3 bg-emerald-300/20 rounded-full"></div>
-      </HeroOrbit>  
+        </HeroOrbit>  
+        </div>
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
@@ -88,7 +90,7 @@ export const HeroSection = () => {
             <span className="font-semibold">Let's talk</span>
           </button>
         </div>
-      </div>
+        </div>
     </div>
   );
 };
