@@ -3,6 +3,8 @@ import Image from "next/image";
 import ArrowDown from "../assets/icons/arrow-down.svg";
 import grainImage from "../assets/images/grain.jpg";
 import Staricon from "../assets/icons/star.svg";
+import SparkleIcon from "../assets/icons/sparkle.svg"
+import { HeroOrbit } from "../components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
@@ -11,10 +13,42 @@ export const HeroSection = () => {
         style={{ backgroundImage: `url(${grainImage.src})` }}
       ></div>
       <div className="hero-ring size-[620px]"></div>
-      <div className="hero-ring size-[820px]"></div>
+      <div className="hero-ring size-[820px]"></div>  
       <div className="hero-ring size-[1020px]"></div>
       <div className="hero-ring size-[1220px]"></div>
-     
+      <HeroOrbit size={800} rotation={-72}>
+        <Image
+          src={Staricon}
+          alt="A star icon floating in the background"
+          className="size-28"
+          style={{
+            filter:
+              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
+          }}
+        />
+      </HeroOrbit>
+        <HeroOrbit size={550} rotation={20}>
+        <Image
+          src={Staricon}
+          alt="A star icon floating in the background"
+          className="size-12"
+          style={{
+            filter:
+              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
+          }}
+        />
+      </HeroOrbit>
+       <HeroOrbit size={590} rotation={98}>
+        <Image
+          src={Staricon}
+          alt="A star icon floating in the background"
+          className="size-12"
+          style={{
+            filter:
+              "brightness(0) saturate(100%) invert(55%) sepia(74%) saturate(577%) hue-rotate(101deg) brightness(103%) contrast(103%)",
+          }}
+        />
+      </HeroOrbit>
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <Image
