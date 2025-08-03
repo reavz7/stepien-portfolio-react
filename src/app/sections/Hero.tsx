@@ -16,7 +16,7 @@ export const HeroSection = () => {
       <div className="hero-ring size-[820px]"></div>  
       <div className="hero-ring size-[1020px]"></div>
       <div className="hero-ring size-[1220px]"></div>
-      <HeroOrbit size={800} rotation={-72}>
+      <HeroOrbit size={745} rotation={-72}>
         <Image
           src={Staricon}
           alt="A star icon floating in the background"
